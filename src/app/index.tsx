@@ -1,9 +1,12 @@
-import { Text, TouchableOpacity, View, StyleSheet, Image } from "react-native"
+import { Text, View, StyleSheet, Image } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
 import { THEME } from "../styles/constants"
 import { Button } from "../components/Buttons"
 
 export default function HomeScreen(){
+    const router = useRouter()
+    
     return(
         <SafeAreaView>
             <View style={styles.container}>
@@ -11,15 +14,13 @@ export default function HomeScreen(){
                     <Image source={require('../../assets/img/logoHomeScreen.png')} style={styles.logoHomeScreen}/>
                     <Text style={styles.logo}>
                         DevCard
-                        </Text>
+                    </Text>
                     <Text style={styles.subtitle}>
                         Seu cartão de visita digital de dev mobile
-                        </Text>
+                    </Text>
                 </View>
-            <Button label="Criar meu cartão"/>
-                
+                <Button label="Criar meu cartão" onPress={() => router.push("/cadastro")} />
             </View>
-            
         </SafeAreaView>
     )
 }

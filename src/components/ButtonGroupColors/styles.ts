@@ -2,12 +2,12 @@ import { StyleSheet } from "react-native";
 import { THEME } from "../../styles/constants";
 
 export const styles = StyleSheet.create({
-        buttonGroupContainer : {
+    buttonGroupContainer: {
         flexDirection: "row",
-        gap:8,
+        gap: 8,
         alignItems: "center",
     },
-    buttonGroupButtonContainer : {
+    buttonGroupButtonContainer: {
         borderRadius: THEME.radius.md,
         borderWidth: 2,
         borderColor: "#3851cd",
@@ -18,15 +18,21 @@ export const styles = StyleSheet.create({
         gap: 8,
         flex: 1,
     },
-    button : {},
-    buttonGroupButtonColorIndicator : {
+    buttonSelected: {
+        backgroundColor: "#3851cd",
+        borderColor: "#3851cd",
+    },
+    buttonGroupButtonColorIndicator: {
         height: 16,
         width: 16,
-        borderRadius: "100%",
+        borderRadius: 100,
         backgroundColor: "#3851cd",
     },
-    buttonGroupButtonText : {
+    buttonGroupButtonText: {
         color: "#3851cd",
         fontWeight: "bold",
     },
-})
+    buttonGroupButtonTextSelected: {
+        color: "#ffffff",
+    },
+});

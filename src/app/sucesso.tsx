@@ -1,9 +1,12 @@
 import { Text, View, StyleSheet, Image } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
 import { THEME } from "../styles/constants"
 import { Button } from "../components/Buttons"
 
 export default function SucessoScreen(){
+    const router = useRouter()
+
     return(
         <SafeAreaView>
             <View style={styles.container}>
@@ -20,8 +23,8 @@ export default function SucessoScreen(){
                         </Text>
                 </View>
             <View style={styles.footerContainer}>
-                <Button label="Criar outro cartão"/>
-                <Button  label="Volta ao início" variant="secondary"/>
+                <Button label="Criar outro cartão" onPress={() => router.replace("/cadastro")} />
+                <Button  label="Volta ao início" variant="secondary" onPress={() => router.replace("/")} />
             </View>
                 
             </View>

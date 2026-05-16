@@ -8,8 +8,12 @@ export default function HomeScreen(){
         <SafeAreaView>
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
-                    <Text style={styles.logo}> DevCard </Text>
-                    <Text style={styles.subtitle}> Seu cartão de visita digital de dev mobile</Text>
+                    <Text style={styles.logo}>
+                        DevCard
+                        </Text>
+                    <Text style={styles.subtitle}>
+                        Seu cartão de visita digital de dev mobile
+                        </Text>
                 </View>
             <Button label="Criar meu cartão"/>
                 
@@ -25,13 +29,14 @@ const styles = StyleSheet.create({
         height: "100%",
         justifyContent: "center",
         alignContent:"center",
+        paddingHorizontal: 24,
     },
     headerContainer:{
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         alignContent: "center",
-        height: 550,
+        height: 535,
     },
     logo:{
         color: THEME.colors.primary,

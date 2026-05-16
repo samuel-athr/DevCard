@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity, View, StyleSheet } from "react-native"
+import { Text, TouchableOpacity, View, StyleSheet, Image } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { THEME } from "../styles/constants"
 import { Button } from "../components/Buttons"
@@ -8,6 +8,7 @@ export default function HomeScreen(){
         <SafeAreaView>
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
+                    <Image source={require('../../assets/img/logoHomeScreen.png')} style={styles.logoHomeScreen}/>
                     <Text style={styles.logo}>
                         DevCard
                         </Text>
@@ -50,5 +51,8 @@ const styles = StyleSheet.create({
         width: 200,
         textAlign: "center",
     },
-
+    logoHomeScreen:{
+        height: 70,
+        resizeMode: "contain",
+    }
 })

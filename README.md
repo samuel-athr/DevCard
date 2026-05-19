@@ -10,22 +10,22 @@ DevCard é um aplicativo mobile criado com Expo e React Native que gera um cart�
 ### Home
 A tela inicial apresenta o nome do app, o slogan e um botão para iniciar o cadastro do cartão.
 
-![Tela Home](assets/img/homeScreen.png)
+![Tela Home](assets/homeScreen.png)
 
 ### Cadastro
 A tela de cadastro exibe o formulário onde o usuário informa nome, cargo, empresa, anos de experiência, tecnologia principal e escolhe a cor do card.
 
-![Tela Cadastro](assets/img/cadastroScreen.png)
+![Tela Cadastro](assets/cadastroScreen.png)
 
 ### Preview
 A tela de visualização mostra o cartão gerado com os dados informados. A cor de fundo do cartão é definida pela cor selecionada no formulário.
 
-![Tela Preview](assets/img/previewScreen_1.png)
+![Tela Preview](assets/previewScreen_1.png)
 
 ### Sucesso
 A tela de sucesso confirma que o cartão foi criado. Ela oferece ações para criar outro cartão ou voltar ao início.
 
-![Tela Sucesso](assets/img/sucessScreen.png)
+![Tela Sucesso](assets/sucessScreen.png)
 
 ## Funcionalidades principais
 - Formulário de cadastro completo
